@@ -1,0 +1,386 @@
+{{#each products.prodlist}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0cm;
+      padding: 0cm;
+      box-sizing: border-box;
+    }
+
+    html {
+      margin: 0cm;
+    }
+
+    body {
+      padding-left: 2cm;
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    h3 {
+      margin-bottom: 0.2cm;
+      padding: 0cm;
+    }
+
+    .header {
+      /* display: flex;
+        justify-content: space; */
+      padding: 1cm;
+    }
+
+    .logo {
+      position: absolute;
+      width: 5cm;
+      top: 0.3cm;
+      right: 1.5cm;
+
+    }
+
+    .better-life {
+      position: absolute;
+      width: 2.5cm;
+      top: -0.65cm;
+      right: 5.3cm;
+    }
+
+    .titl {
+      color: #013298;
+
+      font-weight: 700;
+    }
+
+
+    .boxx {
+      width: 0.6cm;
+      height: 0.7cm;
+      border: 1px solid;
+      margin: 0px -3px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .boxx p {
+      font-size: 18px;
+      margin-top: 1px;
+    }
+
+    .boxxs {
+      width: 0.7cm;
+      height: 0.7cm;
+      border: 1px solid;
+      margin: 0 -1px;
+      display: inline-block;
+    }
+
+    .bottomborder {
+      border: none;
+      border-bottom: 2px solid;
+    }
+
+    .hsfpage {
+      width: 16.5cm;
+      border: 1px solid #013298;
+      padding: 10px;
+      /* margin-top: 4px; */
+    }
+
+    .sub-title {
+      color: #013298;
+      padding: 2px 0;
+    }
+
+    .teller {
+      margin: 0 4px;
+      width: 5cm;
+      height: 1cm;
+      border: 1px solid;
+    }
+
+    .checkboxx {
+      width: 0.3cm;
+      height: 0.3cm;
+      border: 1px solid;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .largeCheckbox {
+      width: 0.5cm;
+      height: 0.5cm;
+    }
+
+    .borderinput {
+      width: 30px;
+      text-align: center;
+      border: 1px solid #000;
+      margin: 0 -2px;
+    }
+
+    .formRow {
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    tr {
+      margin-top: 2cm;
+      padding: 3cm;
+    }
+
+    table {
+
+      margin: 5px 0;
+    }
+
+    .check {
+      margin: 0 5px;
+    }
+
+    #representative {
+      margin: 0 3px;
+    }
+
+    .bordered {
+      border: 1px solid #000;
+      padding-left: 0.03cm 0.1cm;
+    }
+
+    span {
+      display: inline;
+    }
+
+    .nopadding {
+      padding: 0cm;
+    }
+
+    .td-border td {
+      border: 1px solid black;
+      padding: 0.1cm 0cm;
+      padding-left: 0.05cm;
+
+    }
+
+    .mainForm {
+      padding: 5px;
+      width: 26cm;
+
+    }
+
+    .wrapper-page {
+      page-break-after: always;
+      padding: 10px;
+      width: 15cm;
+    }
+
+    /* .wrapper-page:last-child {
+        height: 420mm;
+        width: 297mm;
+        page-break-after: avoid;
+    } */
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wrapper-page">
+
+    <div>
+      <img class="logo" src={{this.logo}} width="45">
+      <h2 class="titl">Bauchan Jigila</h2>
+    </div>
+
+    <label>Serial: # </label><input type="text" name="serial" value="" class=" serial bottomborder">
+    <div class="mainForm">
+      <div class="hsfpage" style="margin-top: 1cm;">
+        <table>
+          <tr>
+            <td class="" style="width:10cm;">
+              <label> Kwanan Wata: </label>
+              <div class="boxx">
+                <p style="color: #C4C4C4;">D</p>
+              </div>
+              <div class="boxx">
+                <p style="color: #C4C4C4;">D</p>
+              </div>
+              <div class="boxx">
+                <p>/</p>
+              </div>
+              <div class="boxx">
+                <p style="color: #C4C4C4;">M</p>
+              </div>
+              <div class="boxx">
+                <p style="color: #C4C4C4;">M</p>
+              </div>
+              <div class="boxx">
+                <p>/</p>
+              </div>
+              <div class="boxx">
+                <p style="color: #C4C4C4;">Y</p>
+              </div>
+              <div class="boxx">
+                <p style="color: #C4C4C4;">Y</p>
+              </div>
+
+            </td>
+            <td class="" style="width:4.8cm; ">
+              <label style="color:#0D3D76; font-size: 18px;">#Na Buhuna:</label>
+
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+
+
+            </td>
+            <td style="width: 1.8cm; text-align: center;">
+              <img src="data:image/jpeg;base64,<?php echo $patch ?>" width="20">
+            </td>
+          </tr>
+
+        </table>
+
+        <table>
+          <tr>
+            <td class="" style="width: 19.25cm;">
+              <label style="width: 3cm;">Sunan Dan Kungiya: </label>
+              <input type="text" class="bottomborder" style="width: 12.6cm;">
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr class="tablerow">
+            <td class="" style="width: 21.1cm;">
+              <label style="width: 3cm;">Lambar Dan Kungiya: </label>
+              <div class="boxx">
+                <p style="font-size: 18px; margin-top: 1px">R</p>
+              </div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx">
+                <p style="font-size: 18px; margin-top: 1px">-</p>
+              </div>
+              <div class="boxx">
+                <p style="font-size: 18px; margin-top: 1px">I</p>
+              </div>
+              <div class="boxx">
+                <p style="font-size: 18px; margin-top: 0px">K</p>
+              </div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+              <div class="boxx">
+                <p style="font-size: 18px; margin-top: 1px">-</p>
+              </div>
+              <div class="boxx"></div>
+              <div class="boxx"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr class="tablerow">
+            <td class="" style="width: 11.7cm;">
+              <p style="margin:0.05cm 0;">Kana aminche wa farashi mara ma'auni?? </p>
+            </td>
+
+            <td style="width: 3cm; text-align: center;">
+              <label style="margin-top: 0.05cm;">Eh </label>
+              <div class="checkboxx"></div>
+            <td style="width: 3cm; text-align: center;">
+              <label style="margin-top: 0.05cm;">A'a </label>
+              <div class="checkboxx"></div>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr class="tablerow">
+            <td class="" style="width: 7cm;">
+              <label>Shigar da farashin kudin jigila</p>
+            </td>
+
+            <td style="width: 4cm; text-align: center;">
+              <div class="boxx" style="width: 7cm; text-align: left; padding: 0 3px;">NGN</div>
+            </td>
+            <td style="width: 2cm; text-align: center;">
+              <img src="data:image/jpeg;base64" width="40" style="margin-top: 6px;">
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr class="tablerow">
+            <td class="" style="width: 11.7cm;">
+              <p style="margin:0.05cm 0;">ka biya kudin da kwangila?</p>
+            </td>
+
+            <td style="width: 3cm; text-align: center;">
+              <label style="margin-top: 0.05cm;">Eh </label>
+              <div class="checkboxx"></div>
+            <td style="width: 3cm; text-align: center;">
+              <label style="margin-top: 0.05cm;">A'a </label>
+              <div class="checkboxx"></div>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td class="" style="width: 9cm;">
+              <label style="width: 3cm">Samfuri: </label>
+              <div class="boxx" style="width: 7cm;"></div><br />
+              <label style="width: 3cm">Ire-Ire: </label>
+              <div class="boxx" style="width: 7cm;"></div>
+            </td>
+            <td style="width: 10cm; text-align:center;"><img src="">
+              <p>{{this.name}}</p>
+              <img src={{this.image}} />
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+
+            <td class="" style="width: 16cm; background-color:#D9D9D9; padding: 15px 2px;">
+              <p>Ka chike nan idan kasan ba ka biya da kwangila ba</p>
+              <label style="width: 4cm;">Sunan Mai Jigila</label>
+              <input type=" text" class="bottomborder" style="width: 10cm;"></br></br>
+              <label style="width: 4cm;">Lambar Mai Jigila </label>
+              <div class="boxx" style="width: 10cm;"></div>
+            </td>
+          </tr>
+        </table>
+        <p style="text-align: center; font-size: 12.5px; margin-top: 0.5cm;">Idan kana da wata matsala ko niman
+          karin bayani, ka kira wannan numban 09088317070</p>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+{{/each}}
